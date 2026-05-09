@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers | Shikho</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Inter',sans-serif;
+            background:#f8fafc;
+            overflow-x:hidden;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        .hero-section{
+            min-height:100vh;
+            background:
+            linear-gradient(rgba(12,18,38,.82),rgba(12,18,38,.82)),
+            url('bg3.jpg');
+            background-size:cover;
+            background-position:center;
+            position:relative;
+            overflow:hidden;
+        }
+
+        .glass{
+            background:rgba(255,255,255,0.08);
+            backdrop-filter:blur(14px);
+            border:1px solid rgba(255,255,255,0.12);
+        }
+
+        .card-hover{
+            transition:all .35s ease;
+        }
+
+        .card-hover:hover{
+            transform:translateY(-10px);
+            box-shadow:0 25px 60px rgba(0,0,0,0.08);
+        }
+
+        .glow{
+            box-shadow:0 10px 40px rgba(255,114,58,.35);
+        }
+
+        .gradient-text{
+            background:linear-gradient(to right,#FF723A,#ff9d73);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+        }
+
+        .blur-circle{
+            position:absolute;
+            width:350px;
+            height:350px;
+            border-radius:50%;
+            filter:blur(120px);
+            opacity:.2;
+            z-index:0;
+        }
+
+        .circle1{
+            background:#FF723A;
+            top:-100px;
+            right:-80px;
+        }
+
+        .circle2{
+            background:#6C7BFF;
+            bottom:-120px;
+            left:-100px;
+        }
+    </style>
+</head>
+
+<body class="text-gray-900">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50">
+        <nav class="max-w-7xl mx-auto px-5 md:px-8 py-5">
+
+            <div class="glass rounded-2xl px-5 md:px-8 py-4 flex items-center justify-between">
+
+                <!-- LOGO -->
+                <div class="flex items-center gap-3">
+                    <img src="shikho.png"
+                    class="h-12 md:h-16 w-auto"
+                    alt="Logo"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+
+                    <h1 style="display:none;" class="text-2xl md:text-3xl font-black text-white tracking-tight">
+                        SHIKHO
+                    </h1>
+                </div>
+
+                <!-- DESKTOP MENU -->
+                <div class="hidden md:flex items-center gap-10 text-white font-medium">
+
+                    <a href="#jobs" class="hover:text-orange-400 transition">
+                        Careers
+                    </a>
+
+                    <a href="#location" class="hover:text-orange-400 transition">
+                        Office
+                    </a>
+
+                    <a href="#jobs"
+                    class="bg-[#FF723A] hover:bg-orange-600 transition px-6 py-3 rounded-xl font-semibold glow">
+                        Apply Now
+                    </a>
+
+                </div>
+
+                <!-- MOBILE BUTTON -->
+                <a href="#jobs"
+                class="md:hidden bg-[#FF723A] text-white px-4 py-2 rounded-xl text-sm font-semibold">
+                    Apply
+                </a>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-section flex items-center justify-center px-6 text-white">
+
+        <div class="blur-circle circle1"></div>
+        <div class="blur-circle circle2"></div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10 pt-24">
+
+            <!-- TAG -->
+            <div class="inline-flex items-center gap-2 glass px-5 py-2 rounded-full text-sm md:text-base font-medium mb-8">
+                <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+                Hiring Talented People Worldwide
+            </div>
+
+            <!-- TITLE -->
+            <h1 class="text-5xl sm:text-6xl md:text-8xl font-black leading-tight tracking-tight mb-8">
+                Build the Future of
+                <span class="gradient-text">
+                    Learning
+                </span>
+            </h1>
+
+            <!-- SUBTITLE -->
+            <p class="text-lg md:text-2xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-12">
+                Join a fast-growing team focused on innovation, creativity, and creating opportunities for the next generation.
+            </p>
+
+            <!-- BUTTONS -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+
+                <a href="#jobs"
+                class="w-full sm:w-auto bg-[#FF723A] hover:bg-orange-600 px-10 py-4 rounded-2xl text-lg font-bold transition duration-300 glow">
+                    View Open Roles
+                </a>
+
+                <a href="#location"
+                class="w-full sm:w-auto glass hover:bg-white/10 px-10 py-4 rounded-2xl text-lg font-semibold transition duration-300">
+                    Office Location
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- JOBS -->
+    <section id="jobs" class="py-24 px-5 md:px-8">
+
+        <div class="max-w-7xl mx-auto">
+
+            <!-- SECTION TITLE -->
+            <div class="text-center mb-16">
+
+                <span class="text-[#FF723A] font-bold uppercase tracking-[3px] text-sm">
+                    Careers
+                </span>
+
+                <h2 class="text-4xl md:text-6xl font-black mt-4 mb-5 text-[#2B3252]">
+                    Current Opportunities
+                </h2>
+
+                <p class="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
+                    Explore exciting opportunities and become part of a modern team shaping the future.
+                </p>
+
+            </div>
+
+            <!-- JOB CARDS -->
+            <div class="grid lg:grid-cols-2 gap-8">
+
+                <!-- CARD -->
+                <div class="bg-white rounded-[32px] p-8 md:p-10 border border-gray-100 card-hover">
+
+                    <div class="flex items-center justify-between mb-8">
+
+                        <span class="bg-orange-100 text-[#FF723A] text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wider">
+                            Full Time
+                        </span>
+
+                        <span class="text-gray-400 font-medium text-sm">
+                            Hybrid
+                        </span>
+
+                    </div>
+
+                    <h3 class="text-3xl font-black text-[#2B3252] mb-5">
+                        Jr. Executive
+                    </h3>
+
+                    <p class="text-gray-500 leading-relaxed mb-8 text-[15px]">
+                        We are looking for a motivated Jr. Executive to assist in daily operations, coordination, and administrative support.
+                    </p>
+
+                    <div class="flex items-center gap-4 mb-10">
+
+                        <div class="w-14 h-14 rounded-2xl bg-gray-100 flex items-center justify-center text-2xl">
+                            📍
+                        </div>
+
+                        <div>
+                            <p class="font-bold text-[#2B3252]">
+                                Dhaka, Bangladesh
+                            </p>
+
+                            <p class="text-gray-500 text-sm">
+                                Hybrid Workplace
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <a href="form.html"
+                    class="block text-center bg-[#2B3252] hover:bg-[#1e243f] text-white py-4 rounded-2xl font-bold transition duration-300">
+                        Apply Now
+                    </a>
+
+                </div>
+
+                <!-- CARD -->
+                <div class="bg-white rounded-[32px] p-8 md:p-10 border border-gray-100 card-hover">
+
+                    <div class="flex items-center justify-between mb-8">
+
+                        <span class="bg-green-100 text-green-600 text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wider">
+                            Remote
+                        </span>
+
+                        <span class="text-gray-400 font-medium text-sm">
+                            Anywhere
+                        </span>
+
+                    </div>
+
+                    <h3 class="text-3xl font-black text-[#2B3252] mb-5">
+                        Customer Experience Executive
+                    </h3>
+
+                    <p class="text-gray-500 leading-relaxed mb-8 text-[15px]">
+                        Ensure users have a seamless experience by solving problems with empathy, professionalism, and speed.
+                    </p>
+
+                    <div class="flex items-center gap-4 mb-10">
+
+                        <div class="w-14 h-14 rounded-2xl bg-gray-100 flex items-center justify-center text-2xl">
+                            🏠
+                        </div>
+
+                        <div>
+                            <p class="font-bold text-[#2B3252]">
+                                Remote Work
+                            </p>
+
+                            <p class="text-gray-500 text-sm">
+                                Flexible Schedule
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <a href="form1.html"
+                    class="block text-center bg-[#FF723A] hover:bg-orange-600 text-white py-4 rounded-2xl font-bold transition duration-300 glow">
+                        Apply Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LOCATION -->
+    <section id="location" class="pb-24 px-5 md:px-8">
+
+        <div class="max-w-6xl mx-auto">
+
+            <div class="bg-white rounded-[36px] overflow-hidden shadow-sm border border-gray-100 grid lg:grid-cols-2">
+
+                <!-- LEFT -->
+                <div class="p-10 md:p-14 flex flex-col justify-center">
+
+                    <span class="text-[#FF723A] font-bold uppercase tracking-[3px] text-sm mb-4">
+                        Headquarters
+                    </span>
+
+                    <h2 class="text-4xl md:text-5xl font-black text-[#2B3252] leading-tight mb-6">
+                        Our Office Location
+                    </h2>
+
+                    <p class="text-gray-500 text-lg leading-relaxed mb-8">
+                        Visit our headquarters located in one of Dhaka’s prime business districts.
+                    </p>
+
+                    <div class="flex items-start gap-5">
+
+                        <div class="min-w-[70px] h-[70px] rounded-3xl bg-orange-100 flex items-center justify-center text-3xl">
+                            📍
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#2B3252] mb-3">
+                                Dhaka Headquarters
+                            </h3>
+
+                            <p class="text-gray-600 leading-relaxed text-lg">
+                                Rangs Paramount, Level 11 Block-K,
+                                Plot-11 Rd No 17,
+                                Dhaka 1213
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="bg-[#2B3252] p-10 md:p-14 flex items-center justify-center">
+
+                    <div class="glass rounded-[32px] p-10 text-center max-w-md w-full">
+
+                        <div class="text-6xl mb-6">
+                            🚀
+                        </div>
+
+                        <h3 class="text-3xl font-black text-white mb-4">
+                            Join Our Team
+                        </h3>
+
+                        <p class="text-gray-300 leading-relaxed mb-8">
+                            Build your future with a fast-growing and innovative company.
+                        </p>
+
+                        <a href="#jobs"
+                        class="block bg-[#FF723A] hover:bg-orange-600 text-white py-4 rounded-2xl font-bold transition duration-300">
+                            Explore Careers
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#111827] text-white py-14 px-5 md:px-8">
+
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+
+            <div class="text-center md:text-left">
+
+                <h2 class="text-3xl font-black mb-4">
+                    SHIKHO
+                </h2>
+
+                <p class="text-gray-400 max-w-sm leading-relaxed">
+                    Empowering the next generation through innovation, opportunity, and learning.
+                </p>
+
+            </div>
+
+            <div class="text-center md:text-right">
+
+                <p class="text-gray-400 text-sm mb-2">
+                    Contact Us
+                </p>
+
+                <a href="mailto:hr.shikho@gmail.com"
+                class="text-2xl font-bold hover:text-[#FF723A] transition">
+                    hr.shikho@gmail.com
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+            © 2026 Shikho. All Rights Reserved.
+        </div>
+
+    </footer>
+
+</body>
+</html>

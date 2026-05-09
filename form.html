@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now | Shikho</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family:'Inter',sans-serif;
+            background:
+            linear-gradient(rgba(12,18,38,.88),rgba(12,18,38,.88)),
+            url('bg3.jpg');
+            background-size:cover;
+            background-position:center;
+            min-height:100vh;
+        }
+
+        .glass{
+            background:rgba(255,255,255,.08);
+            backdrop-filter:blur(18px);
+            border:1px solid rgba(255,255,255,.12);
+        }
+
+        .input{
+            background:rgba(255,255,255,.06);
+            border:1px solid rgba(255,255,255,.12);
+            color:white;
+        }
+
+        .input::placeholder{
+            color:rgba(255,255,255,.5);
+        }
+
+        .input:focus{
+            outline:none;
+            border-color:#FF723A;
+            box-shadow:0 0 0 4px rgba(255,114,58,.15);
+        }
+    </style>
+</head>
+
+<body class="flex items-center justify-center p-5 md:p-8">
+
+    <div class="w-full max-w-2xl glass rounded-[34px] overflow-hidden">
+
+        <!-- HEADER -->
+        <div class="p-8 md:p-10 border-b border-white/10">
+
+            <img src="shikho.png"
+            class="h-14 mb-8"
+            alt="Logo"
+            onerror="this.style.display='none'">
+
+            <div class="inline-flex bg-orange-500/20 text-orange-300 px-4 py-2 rounded-full text-sm font-semibold mb-5">
+                Full Time Position
+            </div>
+
+            <h1 class="text-4xl md:text-5xl font-black text-white leading-tight mb-4">
+                Submit Your Application
+            </h1>
+
+            <p class="text-gray-300 text-lg">
+                Jr. Executive
+            </p>
+
+        </div>
+
+        <!-- FORM -->
+        <form id="applicationForm" class="p-8 md:p-10 space-y-6">
+
+            <div>
+                <label class="block text-sm font-semibold text-gray-300 mb-3">
+                    Full Name
+                </label>
+
+                <input type="text"
+                placeholder="Enter your full name"
+                class="input w-full px-5 py-4 rounded-2xl"
+                required>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-5">
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-300 mb-3">
+                        Email Address
+                    </label>
+
+                    <input type="email"
+                    placeholder="email@example.com"
+                    class="input w-full px-5 py-4 rounded-2xl"
+                    required>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-300 mb-3">
+                        Phone Number
+                    </label>
+
+                    <input type="tel"
+                    placeholder="+880..."
+                    class="input w-full px-5 py-4 rounded-2xl"
+                    required>
+                </div>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-5">
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-300 mb-3">
+                        Employment Type
+                    </label>
+
+                    <input type="text"
+                    value="Full Time"
+                    readonly
+                    class="input w-full px-5 py-4 rounded-2xl opacity-80 font-semibold">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-300 mb-3">
+                        Working Hours
+                    </label>
+
+                    <input type="text"
+                    value="6 Hours Daily"
+                    readonly
+                    class="input w-full px-5 py-4 rounded-2xl opacity-80 font-semibold">
+                </div>
+
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold text-gray-300 mb-3">
+                    Upload CV / Resume
+                </label>
+
+                <input type="file"
+                class="block w-full text-sm text-gray-300
+                file:mr-4 file:py-3 file:px-5
+                file:rounded-xl
+                file:border-0
+                file:font-semibold
+                file:bg-orange-500
+                file:text-white
+                hover:file:bg-orange-600">
+            </div>
+
+            <button type="submit"
+            class="w-full bg-[#FF723A] hover:bg-orange-600 text-white py-5 rounded-2xl text-lg font-bold transition duration-300 shadow-2xl">
+                Continue Application
+            </button>
+
+            <div class="text-center pt-2">
+                <a href="index.html"
+                class="text-gray-400 hover:text-white transition text-sm font-medium">
+                    ← Back to Careers
+                </a>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script>
+        document.getElementById('applicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = 'bkash.html';
+        });
+    </script>
+
+</body>
+</html>
